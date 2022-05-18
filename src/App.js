@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import ReactToPDF from "./Component/ReactToPDF";
 
 function App() {
+  const refVar = useRef()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ReactToPDF element={refVar}>
+        {(toPdf) => (
+          <button type="button" onClick={toPdf}>
+            Click me
+          </button>
+          )
+        }
+      </ReactToPDF>
+      <div ref={refVar}>
+        Something inside APP.js
+      </div>
     </div>
   );
 }
