@@ -1,4 +1,3 @@
-import React from 'react'
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas'
 
@@ -23,9 +22,7 @@ function ReactToPDF(props) {
   }
 
   return (
-    <>
-      {props.children(convertToPDF)}
-    </>
+    props.children(convertToPDF)
   )
 }
 

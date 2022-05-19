@@ -1,0 +1,19 @@
+{
+  "name": "@kunwarji/react-to-pdf",
+  "version": "1.0.0",
+  "description": "Converts JSX of react component to pdf",
+  "main": "ReactToPDF.jsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KunwarVSuryavanshi/ReactToPDF"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "pdf"
+  ],
+  "author": "KunwarVSuryavanshi",
+  "license": "ISC"
+}

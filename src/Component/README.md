@@ -32,3 +32,6 @@ Reference passed to an element prop.
 
 ## Working
 Basically it is using html2canvas (to take snap traversing the DOM) and jsPDF (to generate pdf).
+
+
+(More of the jsPDF feature to be included.)
