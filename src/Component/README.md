@@ -1,6 +1,6 @@
 # ReactToPDF
 
-So this helps one create a PDF file for any React component. There is already one npm pkg for acheiving this functionality,so why this one you ask?
+So this helps one create a PDF file for any React component. There is already one npm pkg for acheiving this functionality, so why this one you ask?
 
 1. Some of them were failing with newer version of react.
 2. Thought of adding more features to it in future as per my requirement.
@@ -11,14 +11,14 @@ So this helps one create a PDF file for any React component. There is already on
 
 ## Usage
 Creating reference for passing it down to ReactToPDF:-
-```
+```javascript
 <div ref={refVar}>
   Something inside the component being rendered. Bazinga!
 </div>
 ```
 
 Calling component:-
-```
+```javascript
   <ReactToPDF element={refVar}>
     `{(toPdf) => (
       <button type="button" onClick={toPdf}>
