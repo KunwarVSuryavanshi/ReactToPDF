@@ -20,13 +20,13 @@ Creating reference for passing it down to ReactToPDF:-
 Calling component:-
 ```javascript
   <ReactToPDF element={refVar}>
-    `{(toPdf) => (
+    {(toPdf) => (
       <button type="button" onClick={toPdf}>
         Click me
       </button>
       )
     }
-  </ReactToPDF>`
+  </ReactToPDF>
 ```
 Reference passed to an element prop.
 
