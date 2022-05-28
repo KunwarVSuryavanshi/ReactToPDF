@@ -20,15 +20,20 @@ Creating reference for passing it down to ReactToPDF:-
 Calling component:-
 ```javascript
   <ReactToPDF element={refVar}>
-    `{(toPdf) => (
+    {(toPdf) => (
       <button type="button" onClick={toPdf}>
         Click me
       </button>
       )
     }
-  </ReactToPDF>`
+  </ReactToPDF>
 ```
 Reference passed to an element prop.
+
+### Other props
+`scale` - The scale to use for rendering. (Optional - Defaults value is 1)
+`x` - Crops canvas x-coordinate. (Optional - Default value is 10)
+`y` - Crop canvas y-coordinate. (Optional - Default value is 10)
 
 ## Working
 Basically it is using html2canvas (to take snap traversing the DOM) and jsPDF (to generate pdf).
