@@ -8,7 +8,7 @@ function ReactToPDF(props) {
       html2canvas(props.element.current, {
         logging: false,
         useCORS: true,
-        scale: props.scale
+        scale: props.scale ?? 1
       })
         .then(resp => {
           const jsPdf = new jsPDF();

@@ -5,7 +5,7 @@ function App() {
   const refVar = useRef()
   return (
     <div>
-      <ReactToPDF element={refVar}>
+      <ReactToPDF element={refVar} scale={0.5} fileName='Bazinga'>
         {(toPdf) => (
           <button type="button" onClick={toPdf}>
             Click me
