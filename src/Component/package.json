@@ -1,6 +1,6 @@
 {
   "name": "@kunwarji/react-to-pdf",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts JSX of react component to pdf",
   "main": "ReactToPDF.jsx",
   "repository": {
