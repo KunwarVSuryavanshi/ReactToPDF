@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <ReactToPDF
-        element={null}
+        element={refVar}
         scale={1}
         cropX={0}
         cropY={0}
