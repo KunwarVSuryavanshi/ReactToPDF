@@ -1,5 +1,6 @@
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas'
+import PropTypes from 'prop-types'
 
 function ReactToPDF(props) {
 
@@ -28,9 +29,6 @@ function ReactToPDF(props) {
           });
           const img = resp.toDataURL();
 
-          const width = jsPdf.internal.pageSize.getWidth();
-          const height = jsPdf.internal.pageSize.getHeight();
-          console.log('PROPS',props.pdfWidth, width, height)
           jsPdf.addImage(img, props.format ? props.format === 'png' || props.format === 'PNG' ? 'PNG' : 'WEBP' : 'JPEG', props.printStart?.[0] ?? 0, props.printStart?.[1] ?? 0, 0, 0, props.compression ?? 'NONE')
           jsPdf.save(props.fileName ?? 'PDF_FILE')
         })
@@ -47,4 +45,24 @@ function ReactToPDF(props) {
   )
 }
 
+ReactToPDF.propTyppes = {
+  element: PropTypes.element.isRequired,
+  scale: PropTypes.number,
+  logging: PropTypes.bool,
+  cropX: PropTypes.number,
+  cropY: PropTypes.number,
+  backgroundColor: PropTypes.string,
+  modifyFn: PropTypes.func,
+  imageTimeout: PropTypes.number,
+  removeContainer: PropTypes.bool,
+  windowWidth: PropTypes.number,
+  windowHeight: PropTypes.number,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  printStart: PropTypes.array,
+  format: PropTypes.string,
+  children: PropTypes.func.isRequired,
+  fileName: PropTypes.string,
+  compression: PropTypes.string,
+}
 export default ReactToPDF
