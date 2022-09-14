@@ -1,7 +1,7 @@
 {
   "name": "@kunwarji/react-to-pdf",
-  "version": "1.0.3",
-  "description": "Converts JSX of react component to pdf",
+  "version": "1.1.1",
+  "description": "React to pdf converts the JSX of react component to pdf",
   "main": "ReactToPDF.jsx",
   "repository": {
     "type": "git",
@@ -19,12 +19,19 @@
   },
   "keywords": [
     "react",
-    "pdf"
+    "pdf",
+    "react to pdf",
+    "react-to-pdf",
+    "jsx to pdf",
+    "jsx-to-pdf",
+    "pdf generation",
+    "jspdf",
+    "html2canvas"
   ],
   "peerDependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
   "author": "KunwarVSuryavanshi",
-  "license": "ISC"
+  "license": "MIT"
 }
