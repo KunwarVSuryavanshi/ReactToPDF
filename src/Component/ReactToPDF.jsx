@@ -15,8 +15,6 @@ function ReactToPDF(props) {
         imageTimeout: props.imageTimeout ?? 0,
         x: props.cropX,
         y: props.cropY,
-        windowWidth: props.windowWidth,
-        windowHeight: props.windowHeight,
         width: props.width,
         height: props.height,
         backgroundColor: props.backgroundColor ?? null
