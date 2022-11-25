@@ -43,7 +43,7 @@ function ReactToPDF(props) {
   )
 }
 
-ReactToPDF.propTyppes = {
+ReactToPDF.propTypes = {
   element: PropTypes.element.isRequired,
   scale: PropTypes.number,
   logging: PropTypes.bool,
